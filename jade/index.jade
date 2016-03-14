@@ -1,0 +1,118 @@
+extends _base
+
+block vars
+    -var title = "Homepage"
+
+
+block content
+    include _header
+    include _navbar
+
+    div.wrapper.col4
+        div#featured_slide
+            div#featured_content
+                ul
+                    li
+                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
+                            img(src="images/car.png")
+                    li
+                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/citydrive.html")
+                            img(src="images/dirve.png")
+                    li
+                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/HiQuadLoc.html")
+                            img(src="images/flying.png")
+                    li
+                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
+                            img(src="images/1.png")
+                    li
+                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/localization.html")
+                            img(src="images/Localization.png")
+                    li
+                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/SAPLOC.html")
+                            img(src="images/smartAP.jpg")
+                    li
+                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/Sinaweibo.html")
+                            img(src="images/weibo.png")
+                    li
+                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/smartcar.html")
+                            img(src="images/02230170.jpg")
+            a(href="javascript:void(0);")#featured-item-prev
+                    img(src="images/prev.png")
+            a(href="javascript:void(0);")#featured-item-next
+                    img(src="images/next.png")
+    //..............................................................
+    div.wrapper.col5
+        div#container
+            div#content
+                h2 Latest News
+                p
+                    strong A publicity film of IIoT Research Center is available.<br><br>
+                    video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/publicity film.mp4"  height="300px" controls="controls")
+                    <br><br><br>
+
+                p
+                    strong An introduction video of our MiraCode system is available
+                    a(href="appendix_video0.html") Here &raquo
+                    <br><br>
+
+                p
+                    strong An introduction video of our ARTCode system is available
+                    a(href="appendix_video1.html") Here &raquo
+                    <br><br>
+                p
+                    strong An introduction video of our multi-hop network system is available <br>
+                    video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/video1.mov"  height="300px" controls="controls")
+
+                b
+                    a(href="http://v.youku.com/v_show/id_XMTM1Nzc4OTY0MA==.html") Watch at Youku &raquo
+            //.......................................................................
+            div#column
+                div.holder
+                    h2 Advisors
+                    ul.latestnews
+                        li
+                            img(src="images/prof_xinbing_wang.jpg" width="110" height="130"  align="left" alt="" )
+                            p
+                                strong Prof. Xinbing Wang
+                            p(style="font-size: 11px") Distinguished Professor Assistant Dean Ph.D. Supervisor in both EE & CS Department School of Electronic, Information & Electrical Engineering Shanghai Jiao Tong University
+                            p.readmore
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/index.html") More &raquo;
+
+                        li
+                            img(src="images/prof_hui_yu.jpg" width="110" height="130"  align="left" alt="" )
+                            p
+                                strong Prof. Hui Yu
+                            p(style="font-size: 11px") Senior Engineer in School of Electronic, Information & Electrical Engineering Shanghai Jiao Tong University
+                            <br><br>
+                            p.readmore
+                                a(href="http://iwct.sjtu.edu.cn/Show.aspx?info_id=907&info_lb=311&flag=98") More &raquo;
+
+                        li
+                            img(src="images/prof_xiaohua_tian.jpg" width="110" height="130"  align="left" alt="" )
+                            p
+                                strong Prof. Xiaohua Tian
+                            p(style="font-size: 11px") Associate Professor, Master’s Supervisor Department of Electronic Engineering,Shanghai Jiao Tong University
+                            br
+                            p.readmore
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xtian/") More &raquo;
+
+
+                        li
+                            img(src="images/prof_xiaoying_gan.jpg" width="110" height="130"  align="left" alt="" )
+                            p
+                                strong Prof. Xiaoying Gan
+                            p(style="font-size: 11px") Associate Professor, Department of Electronic Engineering, Shanghai Jiao Tong University
+                            br
+                            p.readmore
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xygan/") More &raquo;
+
+                    h2 Useful links
+                    ul.latestnews
+                        p(style="text-align: left")
+                            a(href="http://spark.sjtu.edu.cn/")
+                                img(src="images/spark.png" width="250" height="68"  alt="")
+                        p(style="text-align: left")
+                            a(href="http://www.sjtu.edu.cn/")
+                                img(src="images/sjtu.png" width="250" height="68"  alt="")
+
+            br.clear

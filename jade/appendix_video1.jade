@@ -1,0 +1,32 @@
+extends _base
+
+block vars
+    -var title = "Video"
+    -var link = "appendix_video1.html"
+    -var link_ch = "appendix_video1_ch.html"
+    -var language = "English"
+
+
+block content
+
+    include _header
+
+    div.container
+        h3.page-header Our Projects
+        div(style="text-align:center").container
+            div.row
+                h3
+                    strong ARTcode: Turn Any Image into a Barcode
+                hr
+            div.row
+                video(src="http://www.cs.sjtu.edu.cn/~wang-xb/ARTCode.mov"  height="360px" controls="controls")
+            a.img-rounded.btn-info.btn-default(href="http://www.cs.sjtu.edu.cn/~wang-xb/MiraCode.mp4") &nbsp;Download &raquo
+            hr
+            div.row
+                h3.page-header Introduction
+                div.col-md-10.col-md-push-1
+                    big
+                        p.text-left The ubiquitous QR code and some similar barcodes suffer from two common drawbacks — poor user experience and inability to be identified.
+                        p.text-left In order to help users identify the barcodes as well as improve the aesthetics of these barcodes, we design ARTcode — Adaptive Robust doT matrix barCode. The key idea is to integrate data hiding techniques into barcode design. We turn an image into a dot matrix utilizing dithering algorithms and embed data into this dot matrix with data hiding techniques. We perform several pre-processing approaches in order to stabilize the embedding capacity as well as protrude the details of the original image.<br><br><br>
+
+

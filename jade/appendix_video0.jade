@@ -1,0 +1,32 @@
+extends _base
+
+block vars
+    -var title = "Video"
+    -var link = "appendix_video0.html"
+    -var link_ch = "appendix_video0_ch.html"
+    -var language = "English"
+
+
+block content
+
+    include _header
+
+    div.container
+        h3.page-header Our Projects
+        div(style="text-align:center").container
+            div.row
+                h3
+                    strong MiraCode: Multi-color Barcode Streaming with Hue-based Color Selection
+                hr
+            div.row
+                video(src="http://www.cs.sjtu.edu.cn/~wang-xb/MiraCode.mp4"  height="360px" controls="controls")
+            a.img-rounded.btn-info.btn-default(href="http://www.cs.sjtu.edu.cn/~wang-xb/MiraCode.mp4") &nbsp;Download &raquo
+            hr
+            div.row
+                h3.page-header Introduction
+                div.col-md-10.col-md-push-1
+                    big
+                        p.text-left MiraCode is a visible light communication system via screen-to-camera links. The file transmission rate of other similar systems are restricted by the limited capacity of barcode. Compared with these systems, MiraCode uses more colors than any of them to improve the file transmission rate.
+                        p.text-left However, using more colors will increase the difficulty in the decoding process, such as lower recognition accuracy. To improve the recognition accuracy, we propose a new color selection algorithm, where any number of colors can be identified with equal distinction. A reference color based recognition algorithm is also proposed.
+                        p.text-left Moreover, we prove that using 16 colors in MiraCode achieves the maximum capacity when the tradeoff between the number of colors and color recognition accuracy is considered. By studying the influence factors of frame synchronization, we provide a tradeoff between frame rates and calculation complexity. Our evaluation results show that the unit block transmission rate of MiraCode is more than twice as that of COBRA and RDCode.<br><br><br>
+

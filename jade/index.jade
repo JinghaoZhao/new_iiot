@@ -9,130 +9,180 @@ block vars
 block content
 
     include _header
+    div.container-fluid(style="background-image: url('images/pagebg.png');background-size:cover;clear:both;")
+        div.container-fluid.col-center-block
+            div.col-center-block(data-ride="carousel",style="height:350px;width:80%;text-align:center;")#projects-slide.carousel.slide.container-fluid
+                //Indicators
+                ol.carousel-indicators
+                    li.active(data-target="#projects-slide",data-slide-to="0")
+                    li(data-target="#projects-slide",data-slide-to="1")
+                    li(data-target="#projects-slide",data-slide-to="2")
+                    li(data-target="#projects-slide",data-slide-to="3")
+                    li(data-target="#projects-slide",data-slide-to="4")
+                    li(data-target="#projects-slide",data-slide-to="5")
+                    li(data-target="#projects-slide",data-slide-to="6")
+                    li(data-target="#projects-slide",data-slide-to="7")
+                //Wrapper for slides
+                div.row
+                    div(role="listbox",style="margin-top:25px;margin-bottom:20px;").carousel-inner.col-center
+                        div.item.active.row
+                            div.col-md-4.col-md-push-4
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
+                                    img.img-rounded(src="images/car.png", height="300",alt="1")
+                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
+                                h4 SmartTaxiNet: Mobile Service of Driver-Passenger Matching and Taxicab Scheduling System
 
-    //div(style="height: 200px;").container
-    //    div#featured_slide
-    //        a(href="javascript:void(0);")#featured-item-prev
-    //            img(src="images/prev.png")
-    //        a(href="javascript:void(0);")#featured-item-next
-    //            img(src="images/next.png")
-    //        div#featured_content
-    //            ul
-    //                li
-    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
-    //                        img(src="images/car.png")
-    //                li
-    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/citydrive.html")
-    //                        img(src="images/dirve.png")
-    //                li
-    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/HiQuadLoc.html")
-    //                        img(src="images/flying.png")
-    //                li
-    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
-    //                        img(src="images/1.png")
-    //                li
-    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/localization.html")
-    //                        img(src="images/Localization.png")
-    //                li
-    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/SAPLOC.html")
-    //                        img(src="images/smartAP.jpg")
-    //                li
-    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/Sinaweibo.html")
-    //                        img(src="images/weibo.png")
-    //                li
-    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/smartcar.html")
-    //                        img(src="images/02230170.jpg")
-    //
+                        div.item.row
+                            div.col-md-4.col-md-push-4
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/citydrive.html")
+                                    img.img-rounded(src="images/dirve.png",height="",width="400",alt="1")
+                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
+                                h4 CityDrive: A Map-Generating and Speed-Optimizing Driving System
 
-    //...........................................................................................
-    div.container-fluid.bg-warning
-        div.row
-            div.col-md-6.col-md-push-1
-                h2.page-header Latest News
-                h4
-                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
-                    a(href = 'alumnicafe.html')
-                        em  Welcome to our <strong>AlumniCafe</strong>!<br>
-                p
-                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
-                    strong  A publicity film of IIoT Research Center is available.<br><br>
-                    video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/publicity film.mp4",height="300px",controls="controls")
-                    <br><br><br>
+                        div.item.row
+                            div.col-md-4.col-md-push-4
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/HiQuadLoc.html")
+                                    img.img-rounded(src="images/flying.png",height="90%",width="460",alt="1")
+                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
+                                n4 HiQuadLoc: An RSS-Based Indoor Localization System for High-Speed Quadrotors
 
-                p
-                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
-                    strong  An introduction video of our MiraCode system is available
-                    a(href="appendix_video0.html") Here &raquo
-                    <br><br>
+                        div.item.row
+                            div.col-md-4.col-md-push-4
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/indaps.html")
+                                    img.img-rounded(src="images/phones.jpg",height="90%",width="400",alt="1")
+                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
+                                n4 INDAPSON: An Incentive Data Plan Sharing System Based on Self-Organizing Network
 
-                p
-                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
-                    strong  An introduction video of our ARTCode system is available
-                    a(href="appendix_video1.html") Here &raquo
-                    <br><br>
-                p
-                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
-                    strong  An introduction video of our multi-hop network system is available <br><br>
-                    video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/video1.mov",height="300px",controls="controls")
+                        div.item.row
+                            div.col-md-4.col-md-push-4
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/localization.html")
+                                    img.img-rounded(src="images/Localization.png",height="300",width="500",alt="1")
+                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
+                                h4 Indoor Localization with a Crowdsourcing based Fingerprints Collecting
 
-                b
-                    a.img-rounded.btn-info.btn-xs(href="http://v.youku.com/v_show/id_XMTM1Nzc4OTY0MA==.html") Watch at Youku &raquo<br><br><br>
-            //.......................................................................
-            div.col-md-4.col-md-push-1
-                div
-                    h2.page-header Advisors
-                    ul(style="list-style-type :none;").container-fluid
-                        li
-                            div.col-md-5
-                                img.img-circle(src="images/prof_xinbing_wang.jpg",width="110",height="130",align="left" alt="" )
-                            div.col-md-7
-                                p
-                                    strong Prof. Xinbing Wang
-                                p(style="font-size: 11px") Distinguished Professor Assistant Dean Ph.D. Supervisor in both EE & CS Department School of Electronic, Information & Electrical Engineering Shanghai Jiao Tong University
-                                p.readmore
-                                    a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xwang8/index.html") More &raquo;
+                        div.item.row
+                            div.col-md-4.col-md-push-4
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/SAPLOC.html")
+                                    img.img-rounded(src="images/smartAP.jpg",height="300",width="400",alt="1")
+                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
+                                h4 SAPLOC: An Indoor Localization System Based on Smart Access Points
 
-                        li
-                            div.col-md-5
-                                img.img-circle(src="images/prof_hui_yu.jpg",width="110",height="130",align="left", alt="" )
-                            div.col-md-7
-                                p
-                                    strong Prof. Hui Yu
-                                p(style="font-size: 11px") Senior Engineer in School of Electronic, Information & Electrical Engineering Shanghai Jiao Tong University
+                        div.item.row
+                            div.col-md-4.col-md-push-4
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/Sinaweibo.html")
+                                    img.img-rounded(src="images/weibo.png",height="300",width="500",alt="1")
+                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
+                                h4 Data mining of Sina-Weibo
 
-                                p.readmore
-                                    a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Show.aspx?info_id=907&info_lb=311&flag=98") More &raquo;
-
-                        li
-                            div.col-md-5
-                                img.img-circle(src="images/prof_xiaohua_tian.jpg",width="110", height="130" , align="left" ,alt="" )
-                            div.col-md-7
-                                p
-                                    strong Prof. Xiaohua Tian
-                                p(style="font-size: 11px") Associate Professor, Master’s Supervisor Department of Electronic Engineering,Shanghai Jiao Tong University
-
-                                p.readmore
-                                    a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xtian/") More &raquo;
+                        div.item.row
+                            div.col-md-4.col-md-push-4
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/smartcar.html")
+                                    img.img-rounded(src="images/02230170.jpg",height="300",width="400",alt="1")
+                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
+                                h4 Smart car and four-rotor aircraft experiment system
 
 
-                        li
-                            div.col-md-5
-                                img.img-circle(src="images/prof_xiaoying_gan.jpg" ,width="110" ,height="130" , align="left", alt="" )
-                            div.col-md-7
-                                p
-                                    strong Prof. Xiaoying Gan
-                                p(style="font-size: 11px") Associate Professor, Department of Electronic Engineering, Shanghai Jiao Tong University
+                    //Controls
+                    a(href="#projects-slide" role="button" data-slide="prev").left.carousel-control
+                        span(aria-hidden="false").glyphicon.glyphicon-chevron-left
+                        span.sr-only Previous
+                    a(href="#projects-slide" role="button" data-slide="next").right.carousel-control
+                        span(aria-hidden="false").glyphicon.glyphicon-chevron-right
+                        span.sr-only Next
 
-                                p.readmore
-                                    a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xygan/") More &raquo;
 
-                    h2 Useful links
-                    ul.container-fluid
-                        p(style="text-align: left")
-                            a(href="http://spark.sjtu.edu.cn/")
-                                img(src="images/spark.png" width="250", height="68" , alt="")
-                        p(style="text-align: left")
-                            a(href="http://www.sjtu.edu.cn/")
-                                img(src="images/sjtu.png" width="250", height="68" , alt="")
+        hr
+        //...........................................................................................
+        div.container-fluid
+            div.row
+                div.col-md-6.col-md-push-1
+                    h2.page-header Latest News
+                    h4
+                        span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                        a(href = 'alumnicafe.html')
+                            em  Welcome to our <strong>AlumniCafe</strong>!<br>
+                    hr
+                    p
+                        span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                        strong  A publicity film of IIoT Research Center is available.<br><br>
+                        video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/publicity film.mp4",height="300px",controls="controls")
+                        <br><br><br>
+                    hr
+                    p
+                        span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                        strong  An introduction video of our MiraCode system is available &nbsp;
+                        a.img-rounded.btn-info.btn-xs(href="appendix_video0.html") &nbsp;Here &raquo
+                        <br><br>
+                    hr
+                    p
+                        span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn
+                        strong  An introduction video of our ARTCode system is available &nbsp;
+                        a.img-rounded.btn-info.btn-xs(href="appendix_video1.html") &nbsp;Here &raquo
+                        <br><br>
+                    hr
+                    p
+                        span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                        strong  An introduction video of our multi-hop network system is available <br><br>
+                        video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/video1.mov",height="300px",controls="controls")
 
-            br.clear
+                    b
+                        a.img-rounded.btn-info.btn-default(href="http://v.youku.com/v_show/id_XMTM1Nzc4OTY0MA==.html") &nbsp;Watch at Youku &raquo&nbsp;<br><br><br>
+                //.......................................................................
+                div.col-md-4.col-md-push-1
+                    div
+                        h2.page-header Advisors
+                        ul(style="list-style-type :none;").container-fluid
+                            li.row
+                                div.col-md-5
+                                    img.img-circle(src="images/prof_xinbing_wang.jpg",width="110",height="130",align="left" alt="" )
+                                div.col-md-7
+                                    p
+                                        strong Prof. Xinbing Wang
+                                    p(style="font-size: 11px") Distinguished Professor Assistant Dean Ph.D. Supervisor in both EE & CS Department School of Electronic, Information & Electrical Engineering Shanghai Jiao Tong University
+                                    p.readmore
+                                        a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xwang8/index.html") More &raquo;
+                            hr
+                            li.row
+                                div.col-md-5
+                                    img.img-circle(src="images/prof_hui_yu.jpg",width="110",height="130",align="left", alt="" )
+                                div.col-md-7
+                                    p
+                                        strong Prof. Hui Yu
+                                    p(style="font-size: 11px") Senior Engineer in School of Electronic, Information & Electrical Engineering Shanghai Jiao Tong University
+
+                                    p.readmore
+                                        a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Show.aspx?info_id=907&info_lb=311&flag=98") More &raquo;
+                            hr
+                            li.row
+                                div.col-md-5
+                                    img.img-circle(src="images/prof_xiaohua_tian.jpg",width="110", height="130" , align="left" ,alt="" )
+                                div.col-md-7
+                                    p
+                                        strong Prof. Xiaohua Tian
+                                    p(style="font-size: 11px") Associate Professor, Master’s Supervisor Department of Electronic Engineering,Shanghai Jiao Tong University
+
+                                    p.readmore
+                                        a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xtian/") More &raquo;
+
+                            hr
+                            li.row
+                                div.col-md-5
+                                    img.img-circle(src="images/prof_xiaoying_gan.jpg" ,width="110" ,height="130" , align="left", alt="" )
+                                div.col-md-7
+                                    p
+                                        strong Prof. Xiaoying Gan
+                                    p(style="font-size: 11px") Associate Professor, Department of Electronic Engineering, Shanghai Jiao Tong University
+
+                                    p.readmore
+                                        a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xygan/") More &raquo;
+                            hr
+                        h2 Useful links
+                        ul.container-fluid
+                            p(style="text-align: left")
+                                a(href="http://spark.sjtu.edu.cn/")
+                                    img(src="images/spark.png" width="250", height="68" , alt="")
+                            p(style="text-align: left")
+                                a(href="http://www.sjtu.edu.cn/")
+                                    img(src="images/sjtu.png" width="250", height="68" , alt="")
+
+                br.clear

@@ -1,0 +1,32 @@
+extends _base
+
+block vars
+    -var title = "Video"
+    -var link = "appendix_video0.html"
+    -var link_ch = "appendix_video0_ch.html"
+    -var language = "Chinese"
+
+
+block content
+
+    include _header
+
+    div.container
+        h3.page-header 项目
+        div(style="text-align:center").container
+            div.row
+                h3
+                    strong MiraCode: 基于色调的彩色多彩色条码流
+                hr
+            div.row
+                video(src="http://www.cs.sjtu.edu.cn/~wang-xb/MiraCode.mp4"  height="360px" controls="controls")
+            a.img-rounded.btn-info.btn-default(href="http://www.cs.sjtu.edu.cn/~wang-xb/MiraCode.mp4") &nbsp;下载 &raquo
+            hr
+            div.row
+                h3.page-header 介绍
+                div.col-md-10.col-md-push-1
+                    big
+                        p.text-left MiraCode是通过屏幕相机链接的可见光通信系统。其他类似系统的文件传输速率受限于条码的容量限制。与这些系统相比，使用更多的颜色的MiraCode比他们提高了文件的传输速率。
+                        p.text-left 然而，使用更多的颜色会增加在解码过程中的难度，如较低的识别精度。为了提高识别的准确性，我们提出了一个新的颜色选择算法，其中任何数量的颜色可以被识别与平等的区别。还提出了一种基于颜色的识别算法。
+                        p.text-left 此外，权衡颜色的数量和颜色的识别精度，我们证明了在MiraCode使用16种颜色时达到最大容量。通过研究帧同步的影响因素，我们找到了一个帧速率和计算复杂度之间的权衡。我们的评估结果表明，MiraCode单元块传输率超过COBRA和rdcode两次。<br><br><br>
+

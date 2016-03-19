@@ -1,0 +1,33 @@
+extends _base
+
+block vars
+    -var title = "Video"
+    -var link = "appendix_video1.html"
+    -var link_ch = "appendix_video1_ch.html"
+    -var language = "Chinese"
+
+
+block content
+
+    include _header
+
+    div.container
+        h3.page-header 项目
+        div(style="text-align:center").container
+            div.row
+                h3
+                    strong ARTcode: 把所有图片转化成条形码
+                hr
+            div.row
+                video(src="http://www.cs.sjtu.edu.cn/~wang-xb/ARTCode.mov"  height="360px" controls="controls")
+            a.img-rounded.btn-info.btn-default(href="http://www.cs.sjtu.edu.cn/~wang-xb/MiraCode.mp4") &nbsp;下载 &raquo
+            hr
+            div.row
+                h3.page-header 介绍
+                div.col-md-10.col-md-push-1
+                    big
+                        p.text-left 无处不在的二维码和一些类似条形码遭受两个共同的缺点：用户体验差和不能被识别。
+                        p.text-left 为了帮助用户识别条码以及提高这些条形码的美学，我们设计artcode自适应鲁棒点阵条码。其核心思想是将数据隐藏技术整合到条形码设计中。我们把图像分成利用抖动算法点阵数据嵌入到这个点阵数据隐藏技术。我们执行一些预处理方法以稳定的嵌入容量以及突出了原始图像的细节信息。<br><br><br>
+
+
+

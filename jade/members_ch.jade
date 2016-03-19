@@ -10,14 +10,11 @@ block vars
 block content
     include _header
 
-    p
-        != '<script type="text/javascript"> $("#steering_member").ready(function(){$("#open_committee").click(function(){$("#steering_member").toggle(1000);});});</script>'
-
     div.container
         div.container
-            h2.page-header 指导委员会委员
-            img.img-rounded(id="open_committee" src="images/open.gif" height="20" width="20" alt="")
-            ul(style="list-style-type :none;")#steering_member
+            h2.page-header 指导委员会委员 &nbsp;
+                span.glyphicon.glyphicon-plus(style="font-size:20px;color:#2aabd2;",data-toggle="collapse",href="#steering_member",aria-expanded="false",aria-controls="steering_member")
+            ul.collapse(style="list-style-type :none;")#steering_member
                 li(style="height:140px;").container-fluid
                     div.col-md-2
                         img.img-rounded(src="images/prof_yunhao_liu.jpg" width="110" height="130"  align="left" alt="")

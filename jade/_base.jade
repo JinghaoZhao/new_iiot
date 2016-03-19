@@ -7,7 +7,8 @@ doctype
 <meta charset="utf-8">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta http-equiv="imagetoolbar" content="no" />
-<link rel="stylesheet" href="styles/layout.css" type="text/css" />
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+//<link rel="stylesheet" href="styles/layout.css" type="text/css" />
 
 block vars
 title IIOT|#{title}
@@ -20,9 +21,9 @@ title IIOT|#{title}
 body(id="top")
     block content
     block footer
-        div.wrapper.col7
-            div#copyright
-                p.fl_right Copyright &copy; 2003-2016 Xinbing Wang <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;architect:Zhenyu Song | Jinghao Zhao
+        div(style="background-image: url('images/header.png');").container-fluid.navbar-bottom
+            div.pull-right
+                p(style="font-size: 16px;color:#2aabd2;").fl_right <br>Copyright &copy; 2003-2016 Xinbing Wang <br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;architect:Zhenyu Song | Jinghao Zhao
                 br.clear
 
 </html>

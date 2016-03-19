@@ -12,109 +12,119 @@ block vars
 block content
 
     include _header
-    include _navbar
 
-    div.wrapper.col4
-        div#featured_slide
-            div#featured_content
-                ul
-                    li
-                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
-                            img(src="images/car.png")
-                    li
-                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/citydrive.html")
-                            img(src="images/dirve.png")
-                    li
-                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/HiQuadLoc.html")
-                            img(src="images/flying.png")
-                    li
-                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
-                            img(src="images/1.png")
-                    li
-                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/localization.html")
-                            img(src="images/Localization.png")
-                    li
-                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/SAPLOC.html")
-                            img(src="images/smartAP.jpg")
-                    li
-                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/Sinaweibo.html")
-                            img(src="images/weibo.png")
-                    li
-                        a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/smartcar.html")
-                            img(src="images/02230170.jpg")
-            a(href="javascript:void(0);")#featured-item-prev
-                img(src="images/prev.png")
-            a(href="javascript:void(0);")#featured-item-next
-                img(src="images/next.png")
+    //div.wrapper.col4
+    //    div#featured_slide
+    //        div#featured_content
+    //            ul
+    //                li
+    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
+    //                        img(src="images/car.png")
+    //                li
+    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/citydrive.html")
+    //                        img(src="images/dirve.png")
+    //                li
+    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/HiQuadLoc.html")
+    //                        img(src="images/flying.png")
+    //                li
+    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
+    //                        img(src="images/1.png")
+    //                li
+    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/localization.html")
+    //                        img(src="images/Localization.png")
+    //                li
+    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/SAPLOC.html")
+    //                        img(src="images/smartAP.jpg")
+    //                li
+    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/Sinaweibo.html")
+    //                        img(src="images/weibo.png")
+    //                li
+    //                    a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/smartcar.html")
+    //                        img(src="images/02230170.jpg")
+    //        a(href="javascript:void(0);")#featured-item-prev
+    //            img(src="images/prev.png")
+    //        a(href="javascript:void(0);")#featured-item-next
+    //            img(src="images/next.png")
     //..............................................................
-    div.wrapper.col5
-        div#container
-            div#content
-                h2 最新消息
+    div.container-fluid.bg-warning
+        div.row
+            div.col-md-6.col-md-push-1
+                h2.page-header
+                    strong 最新消息
+                h4
+                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                    a(href = 'alumnicafe.html')
+                        em  欢迎了解<strong>校友咖啡</strong>！<br>
+
                 p
-                    strong 上海交通大学智能物联网研究中心介绍视频.<br><br>
+                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                    strong  上海交通大学智能物联网研究中心介绍视频.<br><br>
                     video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/publicity film.mp4"  height="300px" controls="controls")
                     <br><br><br>
 
                 p
-                    strong MiraCode 大容量彩色二维码系统介绍视频
+                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                    strong  MiraCode 大容量彩色二维码系统介绍视频
                     a(href="appendix_video0.html") Here &raquo
                     <br><br>
 
                 p
-                    strong ARTCode 图形二维码系统介绍视频
+                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                    strong  ARTCode 图形二维码系统介绍视频
                     a(href="appendix_video1.html") Here &raquo
                     <br><br>
                 p
-                    strong 多维多跳自组网视频传输系统 介绍视频 <br>
+                    span(style="color:#2aabd2;").glyphicon.glyphicon-bullhorn &nbsp;
+                    strong  多维多跳自组网视频传输系统 介绍视频 <br><br>
                     video(src="http://www.cs.sjtu.edu.cn/~wang-xb/video/video1.mov"  height="300px" controls="controls")
 
                 b
-                    a(href="http://v.youku.com/v_show/id_XMTM1Nzc4OTY0MA==.html") 在优酷观看 &raquo
+                    a.img-rounded.btn-info.btn-xs(href="http://v.youku.com/v_show/id_XMTM1Nzc4OTY0MA==.html") 在优酷观看 &raquo<br><br>
             //.......................................................................
-            div#column
-                div.holder
-                    h2 指导教授
-                    ul.latestnews
-                        li
-                            img(src="images/prof_xinbing_wang.jpg" width="110" height="130"  align="left" alt="" )
-                            p
-                                strong 王新兵 教授
-                            p(style="font-size: 11px") 特聘教授，博士生导师，上海交通大学电子信息与电气工程学院院长助理
-                            <br><br><br>
-                            p.readmore
-                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/index.html") 更多 &raquo;
+            div.col-md-4.col-md-push-1
+                div
+                    h2.page-header
+                        strong 指导教授
+                    ul(style="list-style-type :none;").container-fluid
+                        li.container-fluid
+                            div.col-md-5
+                                img.img-circle(src="images/prof_xinbing_wang.jpg" width="110" height="130"  align="left" alt="" )
+                            div.col-md-7
+                                p
+                                    strong 王新兵 教授
+                                p(style="font-size: 11px") 特聘教授，博士生导师，上海交通大学电子信息与电气工程学院院长助理
+                                a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xwang8/index.html") 更多 &raquo;
+                        <br>
+                        li.container-fluid
+                            div.col-md-5
+                                img.img-circle(src="images/prof_hui_yu.jpg" width="110" height="130"  align="left" alt="" )
+                            div.col-md-7
+                                p
+                                    strong 俞晖 高级工程师
+                                p(style="font-size: 11px") 上海交通大学高级工程师,<br/> 硕士生导师
+                                a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Show.aspx?info_id=907&info_lb=311&flag=98") 更多 &raquo;
+                        <br>
+                        li.container-fluid
+                            div.col-md-5
+                                img.img-circle(src="images/prof_xiaohua_tian.jpg" width="110" height="130"  align="left" alt="" )
+                            div.col-md-7
+                                p
+                                    strong 田晓华 副教授
+                                p(style="font-size: 11px")  上海交通大学副教授,<br/> 硕士生导师
+                                a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xtian/") 更多 &raquo;
 
-                        li
-                            img(src="images/prof_hui_yu.jpg" width="110" height="130"  align="left" alt="" )
-                            p
-                                strong 俞晖 高级工程师
-                            p(style="font-size: 11px") 上海交通大学高级工程师,<br/> 硕士生导师
-                            <br><br><br><br>
-                            p.readmore
-                                a(href="http://iwct.sjtu.edu.cn/Show.aspx?info_id=907&info_lb=311&flag=98") 更多 &raquo;
-
-                        li
-                            img(src="images/prof_xiaohua_tian.jpg" width="110" height="130"  align="left" alt="" )
-                            p
-                                strong 田晓华 副教授
-                            p(style="font-size: 11px")  上海交通大学副教授,<br/> 硕士生导师
-                            <br><br><br>
-                            p.readmore
-                                a(href="http://iwct.sjtu.edu.cn/Personal/xtian/") 更多 &raquo;
-
-
-                        li
-                            img(src="images/prof_xiaoying_gan.jpg" width="110" height="130"  align="left" alt="" )
-                            p
-                                strong 甘小莺 副教授
-                            p(style="font-size: 11px") 上海交通大学副教授,<br/> 硕士生导师
-                            <br><br><br>
-                            p.readmore
-                                a(href="http://iwct.sjtu.edu.cn/Personal/xygan/") 更多 &raquo;
+                        <br>
+                        li.container-fluid
+                            div.col-md-5
+                                img.img-circle(src="images/prof_xiaoying_gan.jpg" width="110" height="130"  align="left" alt="" )
+                            div.col-md-7
+                                p
+                                    strong 甘小莺 副教授
+                                p(style="font-size: 11px") 上海交通大学副教授,<br/> 硕士生导师
+                                a.img-rounded.btn-info.btn-xs(href="http://iwct.sjtu.edu.cn/Personal/xygan/") 更多 &raquo;
 
                     h2 相关链接
-                    ul.latestnews
+                    ul.container-fluid
                         p(style="text-align: left")
                             a(href="http://spark.sjtu.edu.cn/")
                                 img(src="images/spark.png" width="250" height="68"  alt="")

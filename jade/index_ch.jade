@@ -14,76 +14,49 @@ block content
     include _header
 
     div.container-fluid(style="background-image: url('images/pagebg.png');background-size:cover;clear:both;")
-        div.container-fluid.col-center-block
-            div.col-center-block(data-ride="carousel",style="height:350px;width:80%;text-align:center;")#projects-slide.carousel.slide.container-fluid
+        div.container-fluid
+            div.img-rounded(data-ride="carousel",style="padding:10px;background-image:url('images/slidebg.svg');background-size:cover;clear:both;")#projects-slide.carousel.slide.container-fluid
                 //Indicators
                 ol.carousel-indicators
                     li.active(data-target="#projects-slide",data-slide-to="0")
                     li(data-target="#projects-slide",data-slide-to="1")
                     li(data-target="#projects-slide",data-slide-to="2")
-                    li(data-target="#projects-slide",data-slide-to="3")
-                    li(data-target="#projects-slide",data-slide-to="4")
-                    li(data-target="#projects-slide",data-slide-to="5")
-                    li(data-target="#projects-slide",data-slide-to="6")
-                    li(data-target="#projects-slide",data-slide-to="7")
+
                 //Wrapper for slides
                 div.row
-                    div(role="listbox",style="margin-top:25px;margin-bottom:20px;").carousel-inner.col-center
-                        div.item.active.row
-                            div.col-md-4.col-md-push-4
+                    div(role="listbox",style="margin:10px 50px;").carousel-inner.text-center
+                        div.item.active.row.text-center
+                            div.col-sm-3.col-md-offset-1.text-center
                                 a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/taxi.html")
-                                    img.img-rounded(src="images/car.png", height="300",alt="1")
-                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
-                                h4 SmartTaxiNet: Mobile Service of Driver-Passenger Matching and Taxicab Scheduling System
-
-                        div.item.row
-                            div.col-md-4.col-md-push-4
+                                    img.img-rounded(src="images/car.jpg",alt="1")
+                            div.col-sm-3.text-center
                                 a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/citydrive.html")
-                                    img.img-rounded(src="images/dirve.png",height="",width="400",alt="1")
-                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
-                                h4 CityDrive: A Map-Generating and Speed-Optimizing Driving System
-
-                        div.item.row
-                            div.col-md-4.col-md-push-4
+                                    img.img-rounded(src="images/dirve.jpg",alt="1")
+                            div.col-sm-3.text-center
                                 a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/HiQuadLoc.html")
-                                    img.img-rounded(src="images/flying.png",height="90%",width="460",alt="1")
-                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
-                                n4 HiQuadLoc: An RSS-Based Indoor Localization System for High-Speed Quadrotors
+                                    img.img-rounded(src="images/flying.jpg",alt="1")
 
                         div.item.row
-                            div.col-md-4.col-md-push-4
+                            div.col-sm-3.col-md-offset-1.text-center
                                 a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/indaps.html")
-                                    img.img-rounded(src="images/phones.jpg",height="90%",width="400",alt="1")
-                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
-                                n4 INDAPSON: An Incentive Data Plan Sharing System Based on Self-Organizing Network
-
-                        div.item.row
-                            div.col-md-4.col-md-push-4
+                                    img.img-rounded(src="images/phones.jpg",alt="1")
+                            div.col-sm-3.text-center
                                 a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/localization.html")
-                                    img.img-rounded(src="images/Localization.png",height="300",width="500",alt="1")
-                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
-                                h4 Indoor Localization with a Crowdsourcing based Fingerprints Collecting
-
-                        div.item.row
-                            div.col-md-4.col-md-push-4
+                                    img.img-rounded(src="images/Localization.jpg",alt="1")
+                            div.col-sm-3.text-center
                                 a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/SAPLOC.html")
-                                    img.img-rounded(src="images/smartAP.jpg",height="300",width="400",alt="1")
-                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
-                                h4 SAPLOC: An Indoor Localization System Based on Smart Access Points
+                                    img.img-rounded(src="images/smartAP.jpg",alt="1")
 
                         div.item.row
-                            div.col-md-4.col-md-push-4
+                            div.col-sm-3.col-md-offset-1.text-center
                                 a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/Sinaweibo.html")
-                                    img.img-rounded(src="images/weibo.png",height="300",width="500",alt="1")
-                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
-                                h4 Data mining of Sina-Weibo
-
-                        div.item.row
-                            div.col-md-4.col-md-push-4
+                                    img.img-rounded(src="images/weibo.jpg",alt="1")
+                            div.col-sm-3.text-center
                                 a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/smartcar.html")
-                                    img.img-rounded(src="images/02230170.jpg",height="300",width="400",alt="1")
-                            div(style="background-color: rgba(0,0,0,.3)").carousel-caption
-                                h4 Smart car and four-rotor aircraft experiment system
+                                    img.img-rounded(src="images/02230170.jpg",alt="1")
+                            div.col-sm-3.text-center
+                                a(href="http://iwct.sjtu.edu.cn/Personal/xwang8/research-system/sip.html")
+                                    img.img-rounded(src="images/image004.jpg",alt="1")
 
 
                     //Controls
@@ -93,6 +66,8 @@ block content
                     a(href="#projects-slide" role="button" data-slide="next").right.carousel-control
                         span(aria-hidden="false").glyphicon.glyphicon-chevron-right
                         span.sr-only Next
+
+
         hr
         //..............................................................
         div.container-fluid
